@@ -1,0 +1,323 @@
+/*--------------------------------
+General style
+--------------------------------*/
+html, body{
+  height: 100%;
+}
+body{
+  background-color: white;
+  padding-top: 90px;
+}
+
+h1{
+  color: #000000;
+  font-family: din-2014, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.35em;
+}
+
+h2{
+  color: #000000;
+  font-family: din-2014, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.35em;
+}
+
+::selection {
+    background-color: #9500ff;
+    color: #fff;
+}
+
+#sottolineato{
+  border-bottom: 1px solid #9500ff;
+}
+
+/*body alternative
+font-size: 14px;
+color: #777777;
+font-weight: 400;
+line-height: 1.66em;*/
+
+/* Cambiare impostazioni su dispositivi differenti:
+@media only screen and (min-width: 400px) {
+    body {
+        background-image: url('img_flowers.jpg');
+    }
+}
+*/
+
+/*------------------------------
+Sito_personale.html css style
+------------------------------*/
+
+.cover__sx{
+  height: 100%; width: 50%;
+  background-image: url("Copertine/cop 001.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+.cover__dx{
+  height: 100%; width: 50%;
+  background-image: url("Copertine/cop 002.jpg");
+  background-size: cover;
+  background-position: center right;
+  float: right;
+}
+
+.testo__sx{
+  display: block;
+  height: 100%; width: 50%; float: left;
+  text-align: left;
+  padding-left: 60px;
+  vertical-align: middle;
+  background: white;
+}
+
+.testosx__caption{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.testosx__caption__copy{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.testo__dx{
+  display: block;
+  height: 100%; width: 50%; float: right;
+  padding-left: 60px;
+  vertical-align: middle;
+  background: white;
+}
+
+.testodx__caption{
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.testodx__caption__copy{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cover__sx__2{
+  height: 100%; width: 50%;
+  background-image: url("Copertine/cop 003.jpg");
+  background-size: cover;
+  background-position: center left;
+  float: right;
+}
+
+.cover__dx__2{
+  height: 100%; width: 50%;
+  background-image: url("Copertine/cop 004.jpg");
+  background-size: cover;
+  background-position: center right;
+  float: right;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-brand,
+.navbar-nav> li > a{
+    height: 90px;
+    padding-top: 35px;
+
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+/*colore scritta navbar selezionata, colore background navbar*/
+.navbar-default .navbar-nav >
+.active >
+a, .navbar-default .navbar-nav >
+.active>
+a:focus, .navbar-default .navbar-nav >
+.active > a:hover {
+
+    color: black;
+    background-color: transparent;
+}
+
+/*colore scritte navbar non selezionate*/
+.navbar-default .navbar-nav> li> a{
+    color: black;
+}
+
+.navbarfont, .dropdownfont{
+  font-family: din-2014, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#logo{
+  padding-top: 13px;
+  height: 15%;
+  width: 15%;
+}
+
+.icon{
+  padding-bottom: 6px;
+  height: 15%;
+  width: 15%;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #EFEFEF;
+    border-width: thin;
+}
+
+/*Botton SEEMORE*/
+.btn-default {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    transition: color .15s ease-in-out,background .15s ease-in-out,border .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out,background .15s ease-in-out,border .15s ease-in-out;
+}
+
+.btn {
+    border-radius: 3px;
+}
+
+.btn-default:hover {
+    color: white;
+    background-color: #9500ff;
+    border-color: #9500ff;
+}
+
+#stylebotton{
+  font-family: neuzeit-grotesk-extra-conden, sans-serif;
+  font-style: normal;
+  font-weight:  100;
+  font-size: 17px;
+}
+
+/*------ Menù dropdown della navbar-----*/
+.navbar-nav>li>.dropdown-menu{
+  left: 0;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+    margin: 1px 0 0;
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-width: thin;
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: white;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.dropdownfont:hover {
+
+    text-decoration: none;
+    background-color: white;
+    color: #9500ff;
+}
+
+.dropdown-menu>li>a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+/*-----Transizione HOME dietro logo "Ga"------*/
+.navbar-header> span{
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.5s ease-in-out; /** Firefox **/
+    -o-transition: all 0.5s ease-in-out; /** Opera **/
+}
+
+.navbar-header> a:hover + span{
+  opacity: 1;
+  transform: translate(4px,0);
+  -webkit-transform: translate(4px,0); /** Chrome & Safari **/
+  -o-transform: translate(4px,0); /** Opera **/
+  -moz-transform: translate(4px,0); /** Firefox **/
+}
+
+/*------------------------------------
+Archives.html css style
+------------------------------------*/
+
+/*-----Carosello-------*/
+.carousel-inner> .item> img{
+  max-height: 565px;
+  margin: auto;
+}
+
+/*---------Carte in fondo alla pagina---------*/
+.cards{max-width: 1200px; margin: 40px auto; z-index: 0;}
+.card{width: 30%; margin: 0 1.5%; background-color: white; float: left;}
+.card__image{width: 100%, height: auto;}
+.card__copy{padding: 3px 10px;}
+.card__copy h3{margin-bottom: 0}
+
+/*---------Link sulle carte------------------*/
+.contenit{
+    position: relative;
+    width: 50%;
+}
+
+.card__image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  padding-left: 170px;
+}
+
+.card> .contenit:hover .card__image {
+  opacity: 0.5;
+}
+
+.contenit:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgba(149, 0, 255, 0.8);
+  color: white;
+  padding: 16px 32px;
+  white-space: nowrap;
+}
+
+.middle> a:hover{
+  text-decoration: none;
+}
