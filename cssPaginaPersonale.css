@@ -321,3 +321,8 @@ Archives.html css style
 .middle> a:hover{
   text-decoration: none;
 }
+
+.footer{
+  background-color: white;
+  padding: 40px;
+}
